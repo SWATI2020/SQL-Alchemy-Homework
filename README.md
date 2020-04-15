@@ -11,6 +11,7 @@ Using SQLAlchemy to model database schema, sqlite tables for "measurements" and 
 Jupyter Notebook database_engineering.ipynb used for database engineering work.
 Pandas used to read cleaned measurements and stations CSV data.
 Database called hawaii.sqlite created, using declarative_base to create ORM classes for each table, and used create_all to populate database.
+
 Climate Analysis
 Climate analysis and data exploration on new weather tables.
 Jupyter Notebook file called climate_analysis.ipynb used to complete climate analysis and data exporation.
@@ -19,10 +20,12 @@ Used SQLAlchemy create_engine to connect to sqlite database, and automap_base() 
 Precipitation analysis
 Queries retrieve the last 12 months of precipitation data, and results are plotted using matplotlib
 Pandas dataframes house the summary statistics for the precipitation data.
+
 Station analysis
 Calculations of the total number of stations, and most active stations.
 Retrieval of the last 12 months of temperature observation data (tobs), filtered by the station with the highest number of observations.
 Plotted results as a histogram with bins=12.
+
 Temperature analysis
 Function calc_temps accepts a start date and end date in the format %Y-%m-%d, returns the minimum, average, and maximum temperatures for that range of dates.
 Function calculates min, avg, and max temperatures for trip using the matching dates from the previous year (i.e. use "2017-01-01" if trip start date was "2018-01-01")
